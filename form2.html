@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="eng">
+        <head>
+                <meta charset="UTF-8">
+                <title>Form (homework 2)</title>
+                <style type="text/css">
+                        body{
+                                height: 100vh;
+
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                
+                        }
+
+                        .container {
+                                width: 700px;
+                                height: 15px;
+                                border-radius: 4px;
+
+
+                                background: #f4f4f4;
+                                padding: 20px;
+                                
+                        }
+
+                        .form-group {
+                                width: 400px;
+                                color:#fff;
+                                padding: 8px;
+                                border: 0;
+                                border-radius: 4px;
+                                
+                                
+                        }
+
+                        textarea {
+                                width: 317px;
+                                
+                                
+                                padding: 50px;
+                                border: 0;
+                                border-radius: 4px;
+                                 
+                                
+                                
+                                font-size: 10px;
+                                resize: none;
+                                }
+
+                                .btn{
+                                        width: 100px;
+                                        padding: 10px;
+                                        margin: 2px;
+                                        border: 0;
+                                        border-radius: 4px;
+                                        background-color: #43eb34;
+                                }
+
+                </style>
+        </head>
+
+        <body>
+                <form>
+                        <h3>Student registeration form</h3>
+                        <table class="container">
+                                <tr>
+                                        <td>First Name:</td>
+                                        <td><input type="text" id="firstname" class="form-group" name="firstname" placeholder="Enter your firstname"/></td>
+
+                                </tr>
+
+                                <tr>
+                                        <td>Last Name:</td>
+                                        <td><input type="text" id="lastname" class="form-group" name="lastname" placeholder="Enter your lastname"/></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Email:</td>
+                                        <td><input type="text" id="email" class="form-group" name="email" placeholder="It should contain @.."/></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Mobile</td>
+                                        <td><input type="text" id="mobile" class="form-group" name="mobile" placeholder="Only 10 digits are allowed"/></td>
+                                </tr>
+
+                                <tr>
+                                       
+                                        <td>Gender:</td>
+                                        <td>
+                                                <input type="radio" id="genderm"  name="genderm"/>Male 
+                                                <input type="radio" id="genderf"  name="genderf"/>Female
+                                        </td>
+                                
+                                </tr>
+                                
+                                
+                                <tr>
+                                        <td>Date Of Birth:</td>
+                                        <td><input type="date" class="form-group" name="date" size="2"/></td>
+                                </tr>
+
+                                <tr>
+                                        <td></td>
+                                        <td><input type="text" id="firstname" class="form-group" name="firstname" placeholder="Enter your firstname"/></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Address:</td>
+                                        <td><textarea></textarea></td>
+                                </tr>
+
+                                <tr>
+                                        <td>city:</td>
+                                        <td><input type="text" id="city" class="form-group" name="city" /></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Area PIN:</td>
+                                        <td><input type="text" name="pin" class="form-group"/></td>
+                                </tr>
+
+                                <tr>
+                                        <td>State:</td>
+                                        <td><input type="text" name="state" class="form-group"/></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Qualification:</td>
+                                        <td>
+                                                <select>
+                                                        <option selected disabled>Select Qualification:</option>
+                                                        <option value="1">KK</option>
+                                                        <option value="2">LO</option>
+                                                        <option value="3">OP</option>
+                                                </select>
+                                        </td>
+                                        
+                                </tr>
+
+                                <tr>
+                                        <td>Specialization:</td>
+                                        <td>
+                                        <input type="checkbox" name="quality" value="computer"/>Computet Science<br/>
+                                        <input type="checkbox" name="quality" value="technology"/>Information Technology<br/>
+                                        <input type="checkbox" name="quality" value="architecture"/>Computer Architecture<br/>
+                                        <input type="checkbox" name="quality" value="tele"/>Tele Communication 
+                                        </td>
+                                </tr>
+
+                                <tr>
+                                        <td>Password:</td>
+                                        <td><input type="password"  name="passsword" class="form-group" /></td>
+                                </tr>
+                                
+                                <tr>
+                                        <td>
+                                                <input type="button" value="Registered" class="btn"/>
+                                        </td>
+                                </tr>
+                                
+
+                        </table>
+                </form>
+
+        </body>
+</html>

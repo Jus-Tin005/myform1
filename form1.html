@@ -1,0 +1,151 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Register Form</title>
+		<!--  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+		-->
+
+	<!--  <style>
+	@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+	</style>  -->
+
+
+		<style type="text/css">
+
+			
+	@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+	:root{
+		--wcc:rgba(127,127,127,0.13);
+		--gyc:#777;
+		--dbc:#6b34eb;
+	}
+
+	*{
+		box-sizing: border-box;
+	}
+
+	p{
+		color: #6b34eb;
+	}
+
+	body{
+		font-family: 'Stick', sans-serif;
+
+		/* viewport height (vh) */
+		height:100vh;
+
+		display:flex;
+		justify-content: center;
+		align-items: center;
+
+		margin:0;
+		overflow:hidden;
+	}
+
+	.container{
+		width:480px;
+		background-color: var(--wcc);
+
+					/* h v b c */
+		box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+	}
+
+
+	.container h2{
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	.container .form{
+			/* top&bottom left&right */
+		padding: 30px 40px;
+
+	}
+
+	.form .form-group{
+		padding-bottom: 20px;
+		margin-bottom:  40px;
+	}
+
+	.form-group label{
+		display:block;
+		color: var(--gyc);
+		margin-bottom: 5px;
+	}
+
+	.form-group .form-control{
+		/* font-family: 'Stick', sans-serif; */
+		font-family: inherit;
+		width:100%;
+		padding:10px;
+	}
+
+	.form-group .form-control::placeholder{
+		color:rgba(0,0,0,1);
+
+	}
+
+	.form .btn{
+		/* font-family: 'Stick', sans-serif; */
+		font-family: inherit;
+
+		width:100%;
+		background-color: var(--dbc);
+		color:#fff;
+		font-size: 16px;
+		padding:10px;
+		border:none; /* or 0 */
+		border-radius: 4px;
+		cursor:pointer;
+
+		transition: all 0.5s;
+	}
+
+	.form .btn:hover{
+		background-color: orange;
+
+	}
+
+	.form .btn:active{
+		background-color: green;
+	}
+
+		</style>
+	</head>
+	<body> 
+
+		<div class="container">
+			<h2>Register with us</h2>
+
+			<form class="form" action="" method="">
+				
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" name="username" id="username" class="form-control"  placeholder="Enter username" />
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" class="form-control"  placeholder="Enter email" />
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" class="form-control"  placeholder="Enter password" />
+				</div>
+
+				<div class="form-group">
+					<label for="cfmpassword">Confirm Password</label>
+					<input type="password" name="cfmpassword" id="cfmpassword"  class="form-control" placeholder="Enter confirm password" />
+				</div>
+
+
+				<button type="submit" class="btn">Submit</button>
+
+			</form>
+		</div>
+	</body>
+	</html>
